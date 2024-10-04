@@ -5,7 +5,9 @@
 }
 
 :root { 
-    --primary-color: #4891ff /** 设置默认颜色 */
+    --primary-color: #4891ff; /** 设置默认颜色 */
+    --light-color: #f4f4f6; /** 设置亮色 */
+    --dark-color: #111; /** 设置深色 */
 }
 
 
@@ -45,6 +47,7 @@ navbar
 
 .navbar .main-menu ul {
     display: flex; /* 将主菜单的无序列表设置为 Flexbox 布局 */
+    align-items: center;
 }
 
 .navbar ul li a {
@@ -54,8 +57,16 @@ navbar
     transition: 0.5s;  /* 设置过渡效果，持续时间为 0.5 秒，使样式变化更加平滑 */
 }
 
+i {
+    margin-right: 5px; /* 为链接文本添加 10px 的右外边距 */
+}
+
 .navbar ul li a:hover {
     color: var(--primary-color); /* 当鼠标悬停在链接上时，将链接文本的颜色设置为蓝色 */
+}
+
+.navbar ul li:last-child a {
+    margin-left: 10px; /* 为链接文本添加 10px 的左外边距 */
 }
 
 /**
@@ -71,4 +82,72 @@ navbar
     max-width: 800px;  /* 设置小容器的最大宽度为 800px */
     margin: 0 auto;    /* 设置小容器的外边距为自动，使其居中对齐 */
     padding: 0 15px;   /* 为小容器添加左右 15px 的内边距 */
+}
+
+/*
+buttons
+ */
+.btn {
+    display: inline-block; /* 将按钮设置为内联块级元素，使其与其他元素在同一行显示 */
+    padding: 13px 20px;     /* 为按钮添加 10px 的上下内边距和 20px 的左右内边距 */
+    background-color: var(--light-color); /* 设置按钮的背景颜色为亮色 */
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;    /* 为按钮添加 10px 的圆角 */
+    cursor: pointer;
+    transition: 0.5s;
+ }
+
+ .btn:hover {
+    opacity: 0.8;  
+ }
+
+ .btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+ }
+
+ .btn-light {
+    background-color: var(--light-color);
+    color: #333;
+ }
+
+ .btn-dark {
+    background-color: var(--dark-color);
+    color: #fff;
+ }、
+
+/* 现有的样式保持不变 */
+
+/* 添加以下新样式 */
+.hero {
+  background-color: #f4f4f6; /* 设置背景色，根据需要调整 */
+  padding: 60px 0; /* 添加一些内边距 */
+}
+
+.hero-content {
+  text-align: center; /* 居中对齐内容 */
+}
+
+.hero-heading {
+  font-size: 2.5rem; /* 设置标题大小 */
+  color: #333; /* 设置标题颜色 */
+  margin-bottom: 20px; /* 添加底部外边距 */
+}
+
+.text-xxl {
+  font-size: 3em; /* 定义 text-xxl 类的字体大小 */
+  font-weight: bold; /* 加粗字体 */
+}
+
+/* 确保在小屏幕上也能正确显示 */
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 2rem;
+  }
+  .text-xxl {
+    font-size: 2.5rem;
+  }
 }
