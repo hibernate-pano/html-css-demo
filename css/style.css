@@ -78,9 +78,8 @@ hero clasese
 }
 
 .hero .container {
-    background: url("/images/hero-bg.png") no-repeat;
     background-size: contain;
-    background-position: center bottom;
+    background: url("/images/hero-bg.png") no-repeat center bottom;
     height: 550px;
 }
 
@@ -168,6 +167,83 @@ text classes
     }
 }
 
+/* Testimonials */
+.testimonials {
+    padding: 40px 0;
+}
+
+.testimonials .testimonials-heading {
+    width: 700px;
+    margin-bottom: 40px;
+}
+
+.testimonials .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.testimonials .card {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.testimonials .card p:nth-child(2) {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Pricing Section */
+.pricing {
+    padding: 40px 0;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+
+.pricing .pricing-card-subheading {
+    margin-bottom: 30px;
+}
+
+.pricing .pricing-card-price {
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #CCC;
+}
+
+.pricing ul {
+    margin: 30px 0;
+}
+
+.pricing ul li {
+    margin-bottom: 20px;
+}
+
+.pricing ul li i {
+    margin-right: 10px;
+}
+
+.pricing .pricing-footer {
+    margin: 30px 0;
+}
+
+
+.pricing .card {
+    padding: 20px;
+    border-radius: 1em;
+}
+
+.pricing .pricing-card-body {
+    margin-top: 10px;
+}
+
 /**
  utilities classes
  */
@@ -197,6 +273,7 @@ buttons
     border-radius: 10px; /* 为按钮添加 10px 的圆角 */
     cursor: pointer;
     transition: 0.5s;
+    text-align: center;
 }
 
 .btn:hover {
@@ -216,6 +293,11 @@ buttons
 .btn-dark {
     background-color: var(--dark-color);
     color: #fff;
+}
+
+.btn-block {
+    display: block; /* 将按钮设置为块级元素，使其占据整行 */
+    width: 100%; /* 设置按钮的宽度为 100% */
 }
 
 /**
