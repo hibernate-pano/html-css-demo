@@ -18,6 +18,7 @@ body {
     font-size: 16px; /* 设置基础字体大小为 16px */
     line-height: 1.5; /* 设置行高为 1.5，增加可读性 */
     color: #333; /* 设置文本颜色为深灰色 */
+    overflow-x: hidden; /* 隐藏横向滚动条 */
 }
 
 /* 链接样式 */
@@ -115,7 +116,7 @@ i {
 
 /* 文本样式 */
 .text-xxl {
-    font-size: 3em; /* 超大字体 */
+    font-size: 3rem; /* 超大字体 */
     line-height: 1.2; /* 行高 */
     font-weight: 600; /* 加粗字体 */
     margin: 40px 0 20px; /* 外边距 */
@@ -313,10 +314,10 @@ i {
     padding: 60px 0 30px; /* 设置内边距 */
 }
 
-.footer-content {
-    display: flex; /* 使用 Flexbox 布局 */
-    flex-wrap: wrap; /* 允许换行 */
-    justify-content: space-between; /* 在主轴上均匀分配子元素的空间 */
+.footer-grid {
+    display: grid; /* 使用 Flexbox 布局 */
+    gap: 20px;
+    grid-template-columns: 2fr 1fr 1fr 1fr; /* 设置4列布局 */
 }
 
 .card {
@@ -543,6 +544,9 @@ i {
 
 /* media queries */
 @media (max-width: 960px) {
+    .text-xxl {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 670px) {
@@ -553,7 +557,59 @@ i {
     .navbar .hamburger-button {
         display: block;
     }
+
+    .hero .container {
+        background: url("/images/hero-bg-mobile.png") no-repeat bottom;
+        background-size: 350px 400px;
+        height: 770px;
+    }
+
+    .hero .hero-content,
+    .hero .hero-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero .hero-btns .btn {
+        margin-bottom: 10px;
+        width: 100%;
+        display: block;
+    }
+
+    .text-xl {
+        font-size: 1.8rem;
+    }
+
+    .text-lg {
+        font-size: 1.5rem;
+    }
+
+    .text-md {
+        font-size: 1.1rem;
+    }
+
+    .text-sm {
+        font-size: 0.8rem;
+    }
+
+    .testimonials .testimonials-heading {
+        max-width: 100%; /* 设置宽度 */
+        text-align: center; /* 文本居中对齐 */
+    }
+
+    .testimonials .testimonials-grid,
+    .pricing .pricing-grid,
+    .footer .footer-grid {
+        grid-template-columns: 1fr; /* 设置网格布局为单列 */
+    }
+
+    .footer .footer-grid > div {
+        text-align: center;
+    }
 }
 
 @media (max-width: 500px) {
+    .text-xxl { 
+        font-size: 2rem;
+    }
 }
