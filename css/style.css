@@ -207,7 +207,6 @@ text classes
     margin-top: 50px;
 }
 
-
 .pricing .pricing-card-subheading {
     margin-bottom: 30px;
 }
@@ -271,13 +270,149 @@ text classes
     font-size: 1.3rem;
     cursor: pointer;
 }
-             
+
 .faq .faq-group .faq-group-body {
     display: none;
 }
 
 .faq .faq-group .faq-group-body.open {
     display: block;
+}
+
+.faq .faq-menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.faq-menu li {
+    list-style-type: none;
+    padding: 0.75rem 1.5rem;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.faq-menu li:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.faq-menu li.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/*footer*/
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 60px 0 30px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex-basis: 30%;
+  margin-bottom: 30px;
+}
+
+.card img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.card h4 {
+  margin-bottom: 15px;
+}
+
+.email {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-primary {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.social-link {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #007bff;
+}
+
+.footer-menu {
+  flex-basis: 20%;
+}
+
+.footer-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 10px;
+}
+
+.footer-menu a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .card, .footer-menu {
+    flex-basis: 100%;
+  }
+  
+  .footer-menu {
+    margin-bottom: 30px;
+  }
+}
+
+/*
+footer menu links colors
+ */
+.footer .footer-menu a {
+    color: white;
+}
+
+.footer .card a {
+    color: white;
 }
 
 /**
@@ -300,16 +435,17 @@ buttons
  */
 .btn {
     display: inline-block; /* 将按钮设置为内联块级元素，使其与其他元素在同一行显示 */
-    padding: 13px 20px; /* 为按钮添加 10px 的上下内边距和 20px 的左右内边距 */
+    padding: 10px 15px; /* 为按钮添加 10px 的上下内边距和 20px 的左右内边距 */
     background-color: var(--light-color); /* 设置按钮的背景颜色为亮色 */
     color: #333;
     font-weight: 600;
     text-decoration: none;
     border: none;
-    border-radius: 10px; /* 为按钮添加 10px 的圆角 */
+    border-radius: 5px; /* 为按钮添加 10px 的圆角 */
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
     text-align: center;
+    font-size: 0.9rem; /* 减小字体大小 */
 }
 
 .btn:hover {
@@ -334,6 +470,12 @@ buttons
 .btn-block {
     display: block; /* 将按钮设置为块级元素，使其占据整行 */
     width: 100%; /* 设置按钮的宽度为 100% */
+}
+
+/* 为hero部分的按钮添加特殊样式 */
+.hero-btns .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 /**
