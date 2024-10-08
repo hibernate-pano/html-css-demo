@@ -1,360 +1,482 @@
 * {
-    box-sizing: border-box; /* 设置所有元素的盒模型为 border-box，包含内边距和边框在内的总宽度和高度 */
-    margin: 0; /* 清除所有元素的默认外边距 */
-    padding: 0; /* 清除所有元素的默认内边距 */
+	box-sizing: border-box; /* 设置所有元素的盒模型为 border-box，包含内边距和边框在内的总宽度和高度 */
+	margin: 0; /* 清除所有元素的默认外边距 */
+	padding: 0; /* 清除所有元素的默认内边距 */
 }
 
 :root {
-    --primary-color: #4891ff; /** 设置默认颜色 */
-    --light-color: #f4f4f6; /** 设置亮色 */
-    --dark-color: #111; /** 设置深色 */
+	--primary-color: #4891ff; /** 设置默认颜色 */
+	--light-color: #f4f4f6; /** 设置亮色 */
+	--dark-color: #111; /** 设置深色 */
 }
 
 body {
-    font-family: "Poppins", sans-serif; /* 设置页面的字体为 Poppins，后备字体为 sans-serif */
-    font-size: 16px; /* 设置基础字体大小为 16px */
-    line-height: 1.5; /* 设置行高为 1.5，增加可读性 */
-    color: #333; /* 设置文本颜色为白色 */
+	font-family: "Poppins", sans-serif; /* 设置页面的字体为 Poppins，后备字体为 sans-serif */
+	font-size: 16px; /* 设置基础字体大小为 16px */
+	line-height: 1.5; /* 设置行高为 1.5，增加可读性 */
+	color: #333; /* 设置文本颜色为白色 */
 }
 
 a {
-    text-decoration: none; /* 取消链接的下划线装饰 */
-    color: #333; /* 设置链接文本的颜色为深灰色 */
+	text-decoration: none; /* 取消链接的下划线装饰 */
+	color: #333; /* 设置链接文本的颜色为深灰色 */
 }
 
 ul {
-    list-style: none; /* 取消无序列表的默认样式（如圆点） */
+	list-style: none; /* 取消无序列表的默认样式（如圆点） */
 }
 
 img {
-    max-width: 100%; /* 设置图像的最大宽度为 100%，使其响应式 */
+	max-width: 100%; /* 设置图像的最大宽度为 100%，使其响应式 */
 }
 
 /**
 navbar
  */
 .navbar {
-    background-color: #fff; /* 设置导航栏的背景颜色为白色 */
-    padding: 20px; /* 为导航栏添加 20px 的内边距 */
+	background-color: #fff; /* 设置导航栏的背景颜色为白色 */
+	padding: 20px; /* 为导航栏添加 20px 的内边距 */
 }
 
 .navbar .container {
-    display: flex; /* 使用 Flexbox 布局 */
-    justify-content: space-between; /* 在主轴上均匀分配子元素的空间 */
-    align-items: center; /* 在交叉轴上居中对齐子元素 */
+	display: flex; /* 使用 Flexbox 布局 */
+	justify-content: space-between; /* 在主轴上均匀分配子元素的空间 */
+	align-items: center; /* 在交叉轴上居中对齐子元素 */
 }
 
 .navbar .main-menu ul {
-    display: flex; /* 将主菜单的无序列表设置为 Flexbox 布局 */
-    align-items: center;
+	display: flex; /* 将主菜单的无序列表设置为 Flexbox 布局 */
+	align-items: center;
 }
 
 .navbar ul li a {
-    margin: 10px 20px; /* 设置链接的外边距，上下为 10px，左右为 20px */
-    display: block; /* 将链接设置为块级元素，使其占据整行 */
-    font-weight: 600; /* 设置链接文本的字体粗细为 600（加粗） */
-    transition: 0.5s; /* 设置过渡效果，持续时间为 0.5 秒，使样式变化更加平滑 */
+	margin: 10px 20px; /* 设置链接的外边距，上下为 10px，左右为 20px */
+	display: block; /* 将链接设置为块级元素，使其占据整行 */
+	font-weight: 600; /* 设置链接文本的字体粗细为 600（加粗） */
+	transition: 0.5s; /* 设置过渡效果，持续时间为 0.5 秒，使样式变化更加平滑 */
 }
 
 i {
-    margin-right: 5px; /* 为链接文本添加 10px 的右外边距 */
+	margin-right: 5px; /* 为链接文本添加 10px 的右外边距 */
 }
 
 .navbar ul li a:hover {
-    color: var(
-            --primary-color
-    ); /* 当鼠标悬停在链接上时，将链接文本的颜色设置为蓝色 */
+	color: var(
+					--primary-color
+	); /* 当鼠标悬停在链接上时，将链接文本的颜色设置为蓝色 */
 }
 
 .navbar ul li:last-child a {
-    margin-left: 10px; /* 为链接文本添加 10px 的左外边距 */
+	margin-left: 10px; /* 为链接文本添加 10px 的左外边距 */
 }
 
 /*
 hero clasese
  */
 .hero {
-    margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .hero .container {
-    background-size: contain;
-    background: url("/images/hero-bg.png") no-repeat center bottom;
-    height: 550px;
+	background-size: contain;
+	background: url("/images/hero-bg.png") no-repeat center bottom;
+	height: 550px;
 }
 
 .hero .hero-content {
-    width: 70%;
+	width: 70%;
 }
 
 .hero .hero-text {
-    width: 70%;
-    margin-bottom: 20px;
+	width: 70%;
+	margin-bottom: 20px;
 }
 
 .hero .hero-heading {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
+	font-size: 2.5rem;
+	color: #333;
+	margin-bottom: 20px;
 }
 
 /*
 video classes
 */
 .video {
-    padding: 10px 0 40px;
+	padding: 10px 0 40px;
 }
 
 .video-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .video-preview {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 /*
 text classes
  */
 .text-xxl {
-    font-size: 3em;
-    line-height: 1.2;
-    font-weight: 600; /* 加粗字体 */
-    margin: 40px 0 20px;
+	font-size: 3em;
+	line-height: 1.2;
+	font-weight: 600; /* 加粗字体 */
+	margin: 40px 0 20px;
 }
 
 .text-xl {
-    font-size: 2.2em;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 40px 0 20px;
+	font-size: 2.2em;
+	line-height: 1.4;
+	font-weight: normal;
+	margin: 40px 0 20px;
 }
 
 .text-lg {
-    font-size: 1.8em;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 30px 0 20px;
+	font-size: 1.8em;
+	line-height: 1.4;
+	font-weight: normal;
+	margin: 30px 0 20px;
 }
 
 .text-md {
-    font-size: 1.2em;
-    font-weight: normal;
-    margin: 20px 0 10px;
+	font-size: 1.2em;
+	font-weight: normal;
+	margin: 20px 0 10px;
 }
 
 .text-sm {
-    font-size: 0.9em;
-    line-height: 1.4;
-    font-weight: normal;
-    margin: 10px 0 5px;
+	font-size: 0.9em;
+	line-height: 1.4;
+	font-weight: normal;
+	margin: 10px 0 5px;
 }
 
 .text-center {
-    text-align: center;
-}
-
-/* 确保在小屏幕上也能正确显示 */
-@media (max-width: 768px) {
-    .hero-heading {
-        font-size: 2rem;
-    }
-
-    .text-xxl {
-        font-size: 2.5rem;
-    }
+	text-align: center;
 }
 
 /* Testimonials */
 .testimonials {
-    padding: 40px 0;
+	padding: 40px 0;
 }
 
 .testimonials .testimonials-heading {
-    width: 700px;
-    margin-bottom: 40px;
+	width: 700px;
+	margin-bottom: 40px;
 }
 
 .testimonials .testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
 }
 
 .testimonials .card {
-    background: white;
-    color: black;
-    border-radius: 10px;
-    padding: 10px;
+	background: white;
+	color: black;
+	border-radius: 10px;
+	padding: 10px;
 }
 
 .testimonials .card p:nth-child(2) {
-    font-weight: bold;
-    margin-top: 20px;
+	font-weight: bold;
+	margin-top: 20px;
 }
 
 /* Pricing Section */
 .pricing {
-    padding: 40px 0;
+	padding: 40px 0;
 }
 
 .pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-    margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+	margin-top: 50px;
 }
 
-
 .pricing .pricing-card-subheading {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .pricing .pricing-card-price {
-    margin-bottom: 30px;
-    padding: 20px 0;
-    border-bottom: 1px solid #CCC;
+	margin-bottom: 30px;
+	padding: 20px 0;
+	border-bottom: 1px solid #ccc;
 }
 
 .pricing ul {
-    margin: 30px 0;
+	margin: 30px 0;
 }
 
 .pricing ul li {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .pricing ul li i {
-    margin-right: 10px;
+	margin-right: 10px;
 }
 
 .pricing .pricing-footer {
-    margin: 30px 0;
+	margin: 30px 0;
 }
 
 .pricing .card {
-    padding: 20px;
-    border-radius: 1em;
+	padding: 20px;
+	border-radius: 1em;
 }
 
 .pricing .pricing-card-body {
-    margin-top: 10px;
+	margin-top: 10px;
 }
 
 /* FAQ */
 .faq {
-    padding: 40px 0;
+	padding: 40px 0;
 }
 
 .faq .faq-group {
-    border-bottom: 1px solid #CCCCCC;
-    padding-bottom: 20px;
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 20px;
 }
 
 .faq .faq-group .faq-group-header {
-    padding: 20px 0;
-    margin-bottom: 20px;
-    position: relative;
+	padding: 20px 0;
+	margin-bottom: 20px;
+	position: relative;
 }
 
 .faq .faq-group .faq-group-header h4 {
-    font-weight: 600;
-    width: 95%;
+	font-weight: 600;
+	width: 95%;
 }
 
 .faq .faq-group .faq-group-header i {
-    position: absolute;
-    right: 0;
-    top: 35px;
-    font-size: 1.3rem;
-    cursor: pointer;
+	position: absolute;
+	right: 0;
+	top: 35px;
+	font-size: 1.3rem;
+	cursor: pointer;
 }
-             
+
 .faq .faq-group .faq-group-body {
-    display: none;
+	display: none;
 }
 
 .faq .faq-group .faq-group-body.open {
-    display: block;
+	display: block;
+}
+
+.faq ul.faq-menu {
+	max-width: 400px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: grey;
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.faq ul.faq-menu li {
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.faq ul.faq-menu li.active {
+	background: var(--primary-color);
+	color: white;
+}
+
+/**
+   Footer
+ */
+.footer {
+	padding: 40px 0;
+}
+
+.footer h4 {
+	margin-bottom: 10px;
+}
+
+.footer ul li {
+	line-height: 2.5;
+}
+
+.footer ul li a {
+	color: #ccc;
+}
+
+.footer i {
+	font-size: 1.5rem;
+	margin-right: 10px;
+}
+
+.footer .footer-grid {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer .card {
+	margin: 20px 30px 30px 0;
+}
+
+.footer input[type="email"] {
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	margin: 20px 0;
 }
 
 /**
  utilities classes
  */
 .container {
-    max-width: 1100px; /* 设置容器的最大宽度为 1100px */
-    margin: 0 auto; /* 设置容器的外边距为自动，使其居中对齐 */
-    padding: 0 15px; /* 为容器添加左右 15px 的内边距 */
+	max-width: 1100px; /* 设置容器的最大宽度为 1100px */
+	margin: 0 auto; /* 设置容器的外边距为自动，使其居中对齐 */
+	padding: 0 15px; /* 为容器添加左右 15px 的内边距 */
 }
 
 .container-small {
-    max-width: 800px; /* 设置小容器的最大宽度为 800px */
-    margin: 0 auto; /* 设置小容器的外边距为自动，使其居中对齐 */
-    padding: 0 15px; /* 为小容器添加左右 15px 的内边距 */
+	max-width: 800px; /* 设置小容器的最大宽度为 800px */
+	margin: 0 auto; /* 设置小容器的外边距为自动，使其居中对齐 */
+	padding: 0 15px; /* 为小容器添加左右 15px 的内边距 */
 }
 
 /*
 buttons
  */
 .btn {
-    display: inline-block; /* 将按钮设置为内联块级元素，使其与其他元素在同一行显示 */
-    padding: 13px 20px; /* 为按钮添加 10px 的上下内边距和 20px 的左右内边距 */
-    background-color: var(--light-color); /* 设置按钮的背景颜色为亮色 */
-    color: #333;
-    font-weight: 600;
-    text-decoration: none;
-    border: none;
-    border-radius: 10px; /* 为按钮添加 10px 的圆角 */
-    cursor: pointer;
-    transition: 0.5s;
-    text-align: center;
+	display: inline-block; /* 将按钮设置为内联块级元素，使其与其他元素在同一行显示 */
+	padding: 13px 20px; /* 为按钮添加 10px 的上下内边距和 20px 的左右内边距 */
+	background-color: var(--light-color); /* 设置按钮的背景颜色为亮色 */
+	color: #333;
+	font-weight: 600;
+	text-decoration: none;
+	border: none;
+	border-radius: 10px; /* 为按钮添加 10px 的圆角 */
+	cursor: pointer;
+	transition: 0.5s;
+	text-align: center;
 }
 
 .btn:hover {
-    opacity: 0.8;
+	opacity: 0.8;
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
-    color: #fff;
+	background-color: var(--primary-color);
+	color: #fff;
 }
 
 .btn-light {
-    background-color: var(--light-color);
-    color: #333;
+	background-color: var(--light-color);
+	color: #333;
 }
 
 .btn-dark {
-    background-color: var(--dark-color);
-    color: #fff;
+	background-color: var(--dark-color);
+	color: #fff;
 }
 
 .btn-block {
-    display: block; /* 将按钮设置为块级元素，使其占据整行 */
-    width: 100%; /* 设置按钮的宽度为 100% */
+	display: block; /* 将按钮设置为块级元素，使其占据整行 */
+	width: 100%; /* 设置按钮的宽度为 100% */
 }
 
 /**
 Background colors
 */
 .bg-primary {
-    background-color: var(--primary-color);
-    color: #fff;
+	background-color: var(--primary-color);
+	color: #fff;
 }
 
 .bg-light {
-    background-color: var(--light-color);
-    color: #333;
+	background-color: var(--light-color);
+	color: #333;
 }
 
 .bg-dark {
-    background-color: var(--dark-color);
-    color: #fff;
+	background-color: var(--dark-color);
+	color: #fff;
 }
 
 .bg-black {
-    background-color: #000;
-    color: #fff;
+	background-color: #000;
+	color: #fff;
+}
+
+/* hamburger button */
+.hamburger-button {
+	display: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+	width: 30px;
+	height: 3px;
+	background-color: #333;
+	margin: 6px 0;
+}
+
+/* mobile menu */
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	right: -300px;
+	width: 250px;
+	height: 100%;
+	background-color: white;
+	z-index: 100;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+	right: 0;
+}
+
+.mobile-menu ul {
+	margin-top: 100px;
+	padding-right: 10px;
+}
+
+.mobile-menu ul li {
+	margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+	font-size: 20px;
+	transition: 0.3s;
+}
+
+
+/* media queries */
+@media (max-width: 960px) {
+}
+
+@media (max-width: 670px) {
+	.navbar .main-menu {
+		display: none;
+	}
+
+	.navbar .hamburger-button {
+		display: block;
+	}
+}
+
+@media (max-width: 500px) {
 }
