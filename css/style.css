@@ -298,7 +298,7 @@ i {
 .faq-menu li:hover {
     background-color: #e0e0e0; /* 悬停时背景色变深 */
     transform: translateY(-2px); /* 向上移动2像素 */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 添加轻微阴影 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 添加轻微阴影 */
 }
 
 .faq-menu li.active {
@@ -308,99 +308,99 @@ i {
 
 /* 页脚样式 */
 .footer {
-  background-color: #1a1a1a; /* 设置背景颜色 */
-  color: #ffffff; /* 设置文本颜色 */
-  padding: 60px 0 30px; /* 设置内边距 */
+    background-color: #1a1a1a; /* 设置背景颜色 */
+    color: #ffffff; /* 设置文本颜色 */
+    padding: 60px 0 30px; /* 设置内边距 */
 }
 
 .footer-content {
-  display: flex; /* 使用 Flexbox 布局 */
-  flex-wrap: wrap; /* 允许换行 */
-  justify-content: space-between; /* 在主轴上均匀分配子元素的空间 */
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-wrap: wrap; /* 允许换行 */
+    justify-content: space-between; /* 在主轴上均匀分配子元素的空间 */
 }
 
 .card {
-  flex-basis: 30%; /* 设置基础宽度 */
-  margin-bottom: 30px; /* 设置底部外边距 */
+    flex-basis: 30%; /* 设置基础宽度 */
+    margin-bottom: 30px; /* 设置底部外边距 */
 }
 
 .card img {
-  max-width: 150px; /* 设置图像最大宽度 */
-  margin-bottom: 20px; /* 设置底部外边距 */
+    max-width: 150px; /* 设置图像最大宽度 */
+    margin-bottom: 20px; /* 设置底部外边距 */
 }
 
 .card h4 {
-  margin-bottom: 15px; /* 设置底部外边距 */
+    margin-bottom: 15px; /* 设置底部外边距 */
 }
 
 .email {
-  width: 100%; /* 设置宽度 */
-  padding: 10px; /* 设置内边距 */
-  margin-bottom: 10px; /* 设置底部外边距 */
-  border: none; /* 移除边框 */
-  border-radius: 4px; /* 设置圆角 */
-  background-color: #333; /* 设置背景颜色 */
-  color: #fff; /* 设置文本颜色 */
+    width: 100%; /* 设置宽度 */
+    padding: 10px; /* 设置内边距 */
+    margin-bottom: 10px; /* 设置底部外边距 */
+    border: none; /* 移除边框 */
+    border-radius: 4px; /* 设置圆角 */
+    background-color: #333; /* 设置背景颜色 */
+    color: #fff; /* 设置文本颜色 */
 }
 
 .btn-primary {
-  padding: 10px; /* 设置内边距 */
-  border: none; /* 移除边框 */
-  border-radius: 4px; /* 设置圆角 */
-  background-color: #007bff; /* 设置背景颜色 */
-  color: #fff; /* 设置文本颜色 */
-  cursor: pointer; /* 设置鼠标指针样式 */
-  transition: background-color 0.3s ease; /* 设置背景颜色过渡效果 */
+    padding: 10px; /* 设置内边距 */
+    border: none; /* 移除边框 */
+    border-radius: 4px; /* 设置圆角 */
+    background-color: #007bff; /* 设置背景颜色 */
+    color: #fff; /* 设置文本颜色 */
+    cursor: pointer; /* 设置鼠标指针样式 */
+    transition: background-color 0.3s ease; /* 设置背景颜色过渡效果 */
 }
 
 .btn-primary:hover {
-  background-color: #0056b3; /* 悬停时背景颜色 */
+    background-color: #0056b3; /* 悬停时背景颜色 */
 }
 
 .social-link {
-  display: inline-block; /* 设置为内联块级元素 */
-  margin-right: 15px; /* 设置右外边距 */
-  font-size: 20px; /* 设置字体大小 */
-  color: #fff; /* 设置文本颜色 */
-  transition: color 0.3s ease; /* 设置颜色过渡效果 */
+    display: inline-block; /* 设置为内联块级元素 */
+    margin-right: 15px; /* 设置右外边距 */
+    font-size: 20px; /* 设置字体大小 */
+    color: #fff; /* 设置文本颜色 */
+    transition: color 0.3s ease; /* 设置颜色过渡效果 */
 }
 
 .social-link:hover {
-  color: #007bff; /* 悬停时文本颜色 */
+    color: #007bff; /* 悬停时文本颜色 */
 }
 
 .footer-menu {
-  flex-basis: 20%; /* 设置基础宽度 */
+    flex-basis: 20%; /* 设置基础宽度 */
 }
 
 .footer-menu ul {
-  list-style: none; /* 移除列表样式 */
-  padding: 0; /* 移除内边距 */
+    list-style: none; /* 移除列表样式 */
+    padding: 0; /* 移除内边距 */
 }
 
 .footer-menu li {
-  margin-bottom: 10px; /* 设置底部外边距 */
+    margin-bottom: 10px; /* 设置底部外边距 */
 }
 
 .footer-menu a {
-  color: #ccc; /* 设置链接颜色 */
-  text-decoration: none; /* 移除下划线 */
-  transition: color 0.3s ease; /* 设置颜色过渡效果 */
+    color: #ccc; /* 设置链接颜色 */
+    text-decoration: none; /* 移除下划线 */
+    transition: color 0.3s ease; /* 设置颜色过渡效果 */
 }
 
 .footer-menu a:hover {
-  color: #fff; /* 悬停时链接颜色 */
+    color: #fff; /* 悬停时链接颜色 */
 }
 
 /* 响应式设计 */
 @media (max-width: 768px) {
-  .card, .footer-menu {
-    flex-basis: 100%; /* 设置小屏幕上的基础宽度 */
-  }
-  
-  .footer-menu {
-    margin-bottom: 30px; /* 设置底部外边距 */
-  }
+    .card, .footer-menu {
+        flex-basis: 100%; /* 设置小屏幕上的基础宽度 */
+    }
+
+    .footer-menu {
+        margin-bottom: 30px; /* 设置底部外边距 */
+    }
 }
 
 /* 页脚菜单链接颜色 */
@@ -490,4 +490,70 @@ i {
 .bg-black {
     background-color: #000; /* 设置黑色背景 */
     color: #fff; /* 设置文本颜色 */
+}
+
+/* hamburger button */
+.hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+}
+
+/* mobile menu */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu ul {
+    margin-top: 100px;
+    padding-right: 10px;
+}
+
+.mobile-menu ul li {
+    margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+
+/* media queries */
+@media (max-width: 960px) {
+}
+
+@media (max-width: 670px) {
+    .navbar .main-menu {
+        display: none;
+    }
+
+    .navbar .hamburger-button {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
 }

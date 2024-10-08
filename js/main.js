@@ -1,31 +1,46 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const faqGroups = document.querySelectorAll('.faq-group');
+// faq accordion
 
-  faqGroups.forEach(group => {
-    const header = group.querySelector('.faq-group-header');
-    const body = group.querySelector('.faq-group-body');
-    const icon = group.querySelector('.faq-group-header i');
+document.addEventListener('DOMContentLoaded', () => {
+    const faqContent = document.querySelector('.faq-content');
 
-    header.addEventListener('click', () => {
-      // 关闭所有其他的 FAQ 组
-      faqGroups.forEach(otherGroup => {
-        if (otherGroup !== group) {
-          otherGroup.querySelector('.faq-group-body').classList.remove('open');
-          otherGroup.querySelector('.faq-group-header i').classList.remove('fa-minus');
-          otherGroup.querySelector('.faq-group-header i').classList.add('fa-plus');
-        }
-      });
+    faqContent.addEventListener('click', (e) => {
 
-      // 切换当前 FAQ 组的状态
-      body.classList.toggle('open');
-      
-      if (body.classList.contains('open')) {
-        icon.classList.remove('fa-plus');
-        icon.classList.add('fa-minus');
-      } else {
-        icon.classList.remove('fa-minus');
-        icon.classList.add('fa-plus');
-      }
+        // get the closest faq-group-header element
+        const faqGroupHeader = e.target.closest('.faq-group-header');
+        // if the clicked element is not a faq-group-header, return
+        if (!faqGroupHeader) return;
+        // get the faq-group-body element
+        const faqGroup = faqGroupHeader.parentElement;
+        const faqGroupBody = faqGroup.querySelector('.faq-group-body');
+        const icon = faqGroupHeader.querySelector('i');
+        // toggle the icon
+        icon.classList.toggle('fa-plus');
+        icon.classList.toggle('fa-minus');
+        // Toggle visibility of the faq-group-body element
+        faqGroupBody.classList.toggle('open');
+        
+        // 找到其他的 faq-group-body 并设置为关闭
+        const faqGroups = faqContent.querySelectorAll('.faq-group');
+        faqGroups.forEach((group) => {
+            if (group !== faqGroup) {
+                group.querySelector('.faq-group-body').classList.remove('open');
+                group.querySelector('i').classList.remove('fa-minus');
+                group.querySelector('i').classList.add('fa-plus');
+            }
+        });
+
     });
-  });
+});
+
+
+// mobile menu
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerButton = document.querySelector('.hamburger-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    hamburgerButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+    });
+
 });
