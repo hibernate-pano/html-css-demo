@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         icon.classList.toggle('fa-minus');
         // Toggle visibility of the faq-group-body element
         faqGroupBody.classList.toggle('open');
-        
+
         // 找到其他的 faq-group-body 并设置为关闭
         const faqGroups = faqContent.querySelectorAll('.faq-group');
         faqGroups.forEach((group) => {
@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // mobile menu
-
 document.addEventListener('DOMContentLoaded', () => {
     const hamburgerButton = document.querySelector('.hamburger-button');
     const mobileMenu = document.querySelector('.mobile-menu');
